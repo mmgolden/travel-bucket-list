@@ -1,0 +1,20 @@
+// Import normalize.css
+@import "../normalize.css";
+
+// Import font
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap");
+
+// Import global.scss
+@import "./global.scss";
+
+// Global
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+}

@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+/* SCSS */
+import "./assets/scss/main.scss";
+
 /* Apollo */
 import ApolloClient from "apollo-boost";
 import VueApollo from "vue-apollo";
