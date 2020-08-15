@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <p v-for="destination in destinations" :key="destination.id">
-      {{ destination.name }}
-    </p>
-  </div>
+  <main>
+    <div class="container">
+      <p v-for="destination in destinations" :key="destination.id">
+        {{ destination.name }}
+      </p>
+    </div>
+  </main>
 </template>
 
 <script>
@@ -26,3 +28,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.container {
+  @include container;
+}
+</style>
