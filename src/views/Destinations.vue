@@ -1,9 +1,20 @@
 <template>
   <main>
     <div class="container">
-      <p v-for="destination in destinations" :key="destination.id">
-        {{ destination.name }}
-      </p>
+      <!-- Loading -->
+      <div v-if="$apollo.loading"><p>Loading...</p></div>
+
+      <!-- Destinations -->
+      <div v-else-if="destinations.length > 0">
+        <p v-for="destination in destinations" :key="destination.id">
+          {{ destination.name }}
+        </p>
+      </div>
+
+      <!-- Empty -->
+      <div v-else>
+        <p>No destinations have been added yet.</p>
+      </div>
     </div>
   </main>
 </template>
