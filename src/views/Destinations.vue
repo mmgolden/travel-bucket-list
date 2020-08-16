@@ -18,13 +18,21 @@
         <p>No destinations have been added yet.</p>
       </div>
     </div>
+
+    <!-- Modal -->
+    <CreateDestinationModal />
   </main>
 </template>
 
 <script>
 import gql from "graphql-tag";
 
+import CreateDestinationModal from "@/components/CreateDestinationModal.vue";
+
 export default {
+  components: {
+    CreateDestinationModal
+  },
   data() {
     return {
       destinations: []
