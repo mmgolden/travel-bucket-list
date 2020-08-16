@@ -1,7 +1,9 @@
 <template>
   <main>
     <div class="container">
-      <BaseButton>Add destination</BaseButton>
+      <BaseButton @click="openCreateDestinationModal">
+        Add destination
+      </BaseButton>
 
       <!-- Loading -->
       <div v-if="$apollo.loading"><p>Loading...</p></div>
@@ -20,7 +22,7 @@
     </div>
 
     <!-- Modal -->
-    <CreateDestinationModal />
+    <CreateDestinationModal ref="createDestinationModal" />
   </main>
 </template>
 
@@ -46,6 +48,11 @@ export default {
         }
       }
     `
+  },
+  methods: {
+    openCreateDestinationModal() {
+      this.$refs.createDestinationModal.openModal();
+    }
   }
 };
 </script>

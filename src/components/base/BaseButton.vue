@@ -1,5 +1,5 @@
 <template>
-  <b-button :type="type" :outlined="outlined">
+  <b-button :type="type" :outlined="outlined" v-on="$listeners">
     <slot />
   </b-button>
 </template>
@@ -26,5 +26,6 @@ export default {
 <style lang="scss" scoped>
 ::v-deep span {
   font-family: "Heebo", sans-serif;
+  font-weight: 700;
 }
 </style>
