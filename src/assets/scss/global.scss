@@ -22,6 +22,16 @@ $link-focus-border: $primary;
 // Headers
 @mixin h1 {
   font-family: "Heebo", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+@mixin h2 {
+  font-family: "Heebo", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 // Components

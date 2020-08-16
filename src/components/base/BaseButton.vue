@@ -1,5 +1,5 @@
 <template>
-  <b-button :type="type">
+  <b-button :type="type" :outlined="outlined">
     <slot />
   </b-button>
 </template>
@@ -13,6 +13,11 @@ export default {
       },
       required: false,
       default: "is-primary"
+    },
+    outlined: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 };
