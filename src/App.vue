@@ -12,6 +12,12 @@
 <style lang="scss" scoped>
 .container {
   @include container;
+
+  padding: 30px 15px;
+
+  @media screen and (min-width: 992px) {
+    padding: 30px;
+  }
 }
 
 .title {

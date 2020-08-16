@@ -1,6 +1,8 @@
 <template>
   <main>
     <div class="container">
+      <BaseButton>Add destination</BaseButton>
+
       <!-- Loading -->
       <div v-if="$apollo.loading"><p>Loading...</p></div>
 
@@ -43,5 +45,9 @@ export default {
 <style lang="scss" scoped>
 .container {
   @include container;
+}
+
+.button {
+  margin-bottom: 30px;
 }
 </style>

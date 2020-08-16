@@ -19,6 +19,14 @@ const apolloProvider = new VueApollo({
   defaultClient: apolloClient
 });
 
+/* Buefy */
+import { Button } from "buefy";
+Vue.use(Button);
+
+/* Register BaseButton globally */
+import BaseButton from "./components/base/BaseButton.vue";
+Vue.component("BaseButton", BaseButton);
+
 Vue.config.productionTip = false;
 
 new Vue({

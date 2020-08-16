@@ -1,11 +1,30 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
 // Variables
 $black: #333333;
+$primary: #f56b52;
+$primary-invert: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes
+$colors: (
+  "primary": (
+    $primary,
+    $primary-invert
+  )
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
 
 // Headers
 @mixin h1 {
   font-family: "Heebo", sans-serif;
 }
 
+// Components
 @mixin container {
   padding: 0px 15px;
 
@@ -15,3 +34,7 @@ $black: #333333;
     margin: 0 auto;
   }
 }
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
