@@ -20,9 +20,11 @@ const apolloProvider = new VueApollo({
 });
 
 /* Buefy */
-import { Button, Modal } from "buefy";
+import { Button, Modal, Field, Input } from "buefy";
 Vue.use(Button);
 Vue.use(Modal);
+Vue.use(Field);
+Vue.use(Input);
 
 /* Register BaseButton globally */
 import BaseButton from "./components/base/BaseButton.vue";
